@@ -1,0 +1,21 @@
+Integer i = 0;
+Integer j;
+
+String sym;
+
+print("Enter symbol : ");
+input(sym);
+
+
+while (i < 10)
+{ 
+	j = 0;
+	
+	while (j < i)
+	{
+		print(" ", sym)
+		j = j + 1;
+	}
+	print_line();
+	i = i + 1;
+}

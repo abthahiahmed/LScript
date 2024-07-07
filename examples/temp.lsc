@@ -1,0 +1,14 @@
+Floating c;
+Floating f;
+
+print_line("Celcius to Fahrenhite Converter");
+print_line("-------------------------------");
+print_line();
+
+print("Enter celcius temperature : ");
+input(c);
+
+f = (c * 9 / 5) + 32;
+
+
+print_line("The Fahrenhite temperature is : ", f);

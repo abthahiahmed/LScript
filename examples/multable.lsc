@@ -1,0 +1,13 @@
+Integer a = 1;
+Integer m = 5; 
+Integer tmp;
+
+print("Enter a number : ");
+input(m)
+
+while (a <= 10)
+{	
+	tmp = m * a;
+	print_line(m + " x " + a + " = " + tmp);
+	a = a + 1;
+}

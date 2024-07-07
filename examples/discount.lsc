@@ -1,0 +1,13 @@
+Integer price;
+Integer discount;
+Floating final;
+
+print("Enter product price : ");
+input(price);
+
+print("Enter product discount : ");
+input(discount);
+
+final = (price) - (discount / price) * 100;
+
+print("Final Price : ", final);

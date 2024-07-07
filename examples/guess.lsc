@@ -1,0 +1,29 @@
+Integer x = random(1, 100);
+
+print_line("A number is chosen in range 1 - 100");
+print_line("Gress the number in 5 tries.");
+
+Integer i = 0;
+
+Integer y;
+
+while (i < 5)
+{
+	print("Guess the number : ");
+	input(y);
+	if (y == x)
+	{
+		print_line("Congrats! You won");
+		exit();
+	}
+	else if (y > x)
+	{
+		print_line("The number is less then ", y);
+	}
+	else if (y < x)
+	{
+		print_line("The number is greater then ", y);
+	}
+	i = i + 1;
+}
+print_line("You failed to guess!!!");

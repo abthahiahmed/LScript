@@ -1,0 +1,39 @@
+Floating a;
+Floating b;
+String operation; 
+
+print_line("Welcome to Calculator, created using LScript");
+
+print("Enter first number : ");
+input(a);
+
+print("Enter second number : ");
+input(b);
+
+print("Enter Operation (+,-,/,*) : ");
+input(operation);
+
+Floating result;
+
+if (operation == "+")
+{
+	result = a + b;
+}
+else if (operation == "-")
+{
+	result = a - b;
+}
+else if (operation == "*")
+{
+	result = a * b;
+}
+else if (operation == "/")
+{
+	result = a / b;
+}
+else
+{
+	print_line("Unknown operation entered!");
+}
+
+print_line("Result : ", result);

@@ -1,0 +1,14 @@
+Integer num1 = 100;
+Integer num2 = 200;
+Integer num3 = 100.50;
+Integer num4 = 200.50;  
+
+String name = "Abthahi";
+String city = "Chittagong";
+
+Array(Integer) array = [1, 2, 4, 5, 10];
+
+Boolean i = True;
+
+print_line("showVarTable() is a built in function which can show the variables with there memory address.");
+showVarTable()
