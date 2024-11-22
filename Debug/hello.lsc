@@ -1,0 +1,9 @@
+Integer num = 10
+
+if ()
+{
+}
+else
+{
+	print("Equal to 0")
+}

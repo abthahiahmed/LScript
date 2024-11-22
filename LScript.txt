@@ -1,0 +1,1 @@
+Debug/includes_Parser.cpp.o Debug/includes_Arithmetic.cpp.o Debug/includes_Tokenizer.cpp.o Debug/includes_Condition.cpp.o Debug/includes_Interpreter.cpp.o Debug/includes_ErrorLog.cpp.o Debug/includes_global.cpp.o Debug/main.cpp.o Debug/includes_Types.cpp.o Debug/includes_Variables.cpp.o Debug/includes_Functions.cpp.o

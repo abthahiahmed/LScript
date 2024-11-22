@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Types.hpp"
+#include "global.hpp"
 using namespace std;
 
 class ErrorLog
