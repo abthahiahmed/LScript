@@ -14,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Abthahi Ahmed Rifat
-Date                   :=22/11/24
+Date                   :=28/11/24
 CodeLitePath           :=/home/abthahi/.codelite
 LinkerName             :=/usr/bin/g++-11
 SharedObjectLinkerName :=/usr/bin/g++-11 -shared -fPIC
@@ -62,7 +62,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/usr/share/codelite
-Objects0=$(IntermediateDirectory)/includes_Parser.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Tokenizer.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Interpreter.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_ErrorLog.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_global.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Types.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Variables.cpp$(ObjectSuffix) \
+Objects0=$(IntermediateDirectory)/includes_Parser.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Tokenizer.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Interpreter.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_ErrorLog.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_global.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Types.cpp$(ObjectSuffix) $(IntermediateDirectory)/includes_Variables.cpp$(ObjectSuffix) \
 	$(IntermediateDirectory)/includes_Functions.cpp$(ObjectSuffix) 
 
 
@@ -100,29 +100,29 @@ $(IntermediateDirectory)/includes_Parser.cpp$(ObjectSuffix): includes/Parser.cpp
 $(IntermediateDirectory)/includes_Parser.cpp$(PreprocessSuffix): includes/Parser.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/includes_Parser.cpp$(PreprocessSuffix) includes/Parser.cpp
 
-$(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix): includes/Arithmetic.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/includes_Arithmetic.cpp$(DependSuffix) -MM includes/Arithmetic.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/mnt/sda/Development/Projects/Cpp/CPP_PROGRAM/LScript/includes/Arithmetic.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/includes_Arithmetic.cpp$(PreprocessSuffix): includes/Arithmetic.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/includes_Arithmetic.cpp$(PreprocessSuffix) includes/Arithmetic.cpp
-
 $(IntermediateDirectory)/includes_Tokenizer.cpp$(ObjectSuffix): includes/Tokenizer.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/includes_Tokenizer.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/includes_Tokenizer.cpp$(DependSuffix) -MM includes/Tokenizer.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/mnt/sda/Development/Projects/Cpp/CPP_PROGRAM/LScript/includes/Tokenizer.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/includes_Tokenizer.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/includes_Tokenizer.cpp$(PreprocessSuffix): includes/Tokenizer.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/includes_Tokenizer.cpp$(PreprocessSuffix) includes/Tokenizer.cpp
 
-$(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix): includes/Condition.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/includes_Condition.cpp$(DependSuffix) -MM includes/Condition.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/mnt/sda/Development/Projects/Cpp/CPP_PROGRAM/LScript/includes/Condition.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/includes_Condition.cpp$(PreprocessSuffix): includes/Condition.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/includes_Condition.cpp$(PreprocessSuffix) includes/Condition.cpp
-
 $(IntermediateDirectory)/includes_Interpreter.cpp$(ObjectSuffix): includes/Interpreter.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/includes_Interpreter.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/includes_Interpreter.cpp$(DependSuffix) -MM includes/Interpreter.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/mnt/sda/Development/Projects/Cpp/CPP_PROGRAM/LScript/includes/Interpreter.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/includes_Interpreter.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/includes_Interpreter.cpp$(PreprocessSuffix): includes/Interpreter.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/includes_Interpreter.cpp$(PreprocessSuffix) includes/Interpreter.cpp
+
+$(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix): includes/Arithmetic.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/includes_Arithmetic.cpp$(DependSuffix) -MM includes/Arithmetic.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/mnt/sda/Development/Projects/Cpp/CPP_PROGRAM/LScript/includes/Arithmetic.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/includes_Arithmetic.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/includes_Arithmetic.cpp$(PreprocessSuffix): includes/Arithmetic.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/includes_Arithmetic.cpp$(PreprocessSuffix) includes/Arithmetic.cpp
+
+$(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix): includes/Condition.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/includes_Condition.cpp$(DependSuffix) -MM includes/Condition.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/mnt/sda/Development/Projects/Cpp/CPP_PROGRAM/LScript/includes/Condition.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/includes_Condition.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/includes_Condition.cpp$(PreprocessSuffix): includes/Condition.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/includes_Condition.cpp$(PreprocessSuffix) includes/Condition.cpp
 
 $(IntermediateDirectory)/includes_ErrorLog.cpp$(ObjectSuffix): includes/ErrorLog.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/includes_ErrorLog.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/includes_ErrorLog.cpp$(DependSuffix) -MM includes/ErrorLog.cpp
